@@ -362,7 +362,7 @@ const MessageContainer = ({ selectedChat, setChats, setSelectedChat, isTyping, t
     };
 
     return (
-        <div className="flex flex-col h-full">
+        <div className="flex flex-col h-[85vh]">
             {/* Chat header with back button for mobile */}
             <div className="flex items-center p-3 border-b border-gray-200 bg-white">
                 {isMobile && (
