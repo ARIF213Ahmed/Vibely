@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.custom-input {
+  @apply bg-black rounded-lg px-5 py-2 focus:border focus:outline-none  placeholder:text-gray-600 placeholder:opacity-50 font-semibold md:w-72 lg:w-[340px] border-[#01F83C];
+}
+.custom-input1 {
+  @apply px-5 py-1 outline-none border-2 rounded-md focus:outline-none  placeholder:text-gray-600 placeholder:opacity-50 font-light md:w-72 lg:w-[340px] text-black;
+}
+
+.auth-btn {
+  @apply px-24 md:px-[118px] lg:px-[140px] py-2 rounded-md text-white bg-[#01F83C];
+}
+body {
+  background-color: #242424;
+  color: white;
+}
