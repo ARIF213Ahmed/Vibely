@@ -329,6 +329,11 @@ const UserAccount = ({ user: loggedInUser }) => {
                             <div className="flex-1">
                                 <div className="mb-4">
                                     <h2 className="text-2xl font-bold">{user.name}</h2>
+                                    {user.gender && (
+                                        <p className="text-gray-400 text-sm capitalize">
+                                            {user.gender}
+                                        </p>
+                                    )}
                                 </div>
 
                                 <div className="flex gap-4 mb-4">
