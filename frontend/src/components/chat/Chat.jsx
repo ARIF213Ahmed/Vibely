@@ -111,7 +111,7 @@ const Chat = ({ chat, setSelectedChat, isOnline, isTyping }) => {
                             className="w-10 h-10 rounded-full object-cover"
                         />
                         {isOnline && (
-                            <div className="absolute bottom-0 right-0 w-3 h-3 bg-green-500 rounded-full border-2 border-white"></div>
+                            <div className="absolute bottom-0 right-0 w-3 h-3 bg-green-500 rounded-full border-2 border-white">.</div>
                         )}
                     </div>
 
