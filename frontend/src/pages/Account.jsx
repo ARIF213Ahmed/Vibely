@@ -280,7 +280,6 @@
 // export default Account
 
 
-
 import React, { useEffect, useState, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { UserData } from '../context/UserContext';
@@ -329,7 +328,6 @@ const Account = ({ user }) => {
         }
     };
 
-    // Navigation arrow conditions
     const isFirstReel = index === 0;
     const isLastReel = index === myReels.length - 1;
     const isMiddleReel = !isFirstReel && !isLastReel;
@@ -448,14 +446,21 @@ const Account = ({ user }) => {
                                                     </button>
                                                 </div>
                                             ) : (
-                                                <div className="flex items-center gap-2">
-                                                    <h2 className="text-2xl font-bold">{user.name}</h2>
-                                                    <button
-                                                        onClick={() => setShowInput(true)}
-                                                        className="text-blue-400 hover:text-blue-300"
-                                                    >
-                                                        <CiEdit size={20} />
-                                                    </button>
+                                                <div className="flex flex-col gap-1">
+                                                    <div className="flex items-center gap-2">
+                                                        <h2 className="text-2xl font-bold">{user.name}</h2>
+                                                        <button
+                                                            onClick={() => setShowInput(true)}
+                                                            className="text-blue-400 hover:text-blue-300"
+                                                        >
+                                                            <CiEdit size={20} />
+                                                        </button>
+                                                    </div>
+                                                    {user.gender && (
+                                                        <p className="text-gray-400 text-sm capitalize">
+                                                            {user.gender}
+                                                        </p>
+                                                    )}
                                                 </div>
                                             )}
                                         </div>
